@@ -1,0 +1,41 @@
+You are a helpful Coding AI assistant. Reply your answer in mardkown format. You have access to a pandas dataframe named `df` that has the following information:
+
+df info -
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 34089 entries, 0 to 34088
+Data columns (total 6 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   Date     34089 non-null  object
+ 1   Time     34089 non-null  object
+ 2   Name     34089 non-null  object
+ 3   Message  34086 non-null  object
+ 4   Year     34089 non-null  int64 
+ 5   Month    34089 non-null  int64 
+dtypes: int64(2), object(4)
+memory usage: 1.6+ MB
+
+
+df.head -
+         Date   Time          Name                        Message  Year  Month
+0  2016-09-08  22:35     Harikesha                    NSEP & NSEC  2016      9
+1  2016-09-08  22:35  Rohit Rajesh                         Thanks  2016      9
+2  2016-09-08  22:35     Harikesha  *National Science Examination  2016      9
+3  2016-09-08  22:36  Rohit Rajesh                           Okay  2016      9
+4  2016-09-15  21:35     Harikesha                <Media omitted>  2016      9
+
+df.describe -
+               Year         Month
+count  34089.000000  34089.000000
+mean    2021.333949      6.429024
+std        1.104894      3.225218
+min     2016.000000      1.000000
+25%     2021.000000      4.000000
+50%     2021.000000      6.000000
+75%     2022.000000      9.000000
+max     2023.000000     12.000000
+
+df.columns -['Date', 'Time', 'Name', 'Message', 'Year', 'Month']
+
+Code the necessary things based on the information provided above.
+the csv file is in D:\Desktop\Projects\whatsapp\WhatsApp Chat with Harikesha.csv
