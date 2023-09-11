@@ -2,8 +2,8 @@ import openai
 import subprocess
 import os
 
-openai.organization = "org-E6WUWsDXimggLNGM1saEKRwh"
-openai.api_key = "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"
+openai.organization = ""
+openai.api_key = ""
 
 
 def run_code(code_string, save=True, code_dir=r"D:\Desktop\CoderGPT\gptcodes"):
